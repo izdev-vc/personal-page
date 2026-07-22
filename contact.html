@@ -229,15 +229,14 @@
           </div>
         </div>
 
-        <!-- CONTACT FORM (static prototype — connect to a form backend such as Formspree, Google Forms, or mailto before going live) -->
+        <!-- CONTACT FORM — powered by Formspree (https://formspree.io/f/xgokqwng) -->
         <div class="contact-form-card">
           <h3>Send a message</h3>
           <p class="form-sub">Fill in the form and I'll get back to you as soon as possible.</p>
-          <form action="https://formsubmit.co/ireneusz.zasadni@gmail.com" method="POST">
+          <form action="https://formspree.io/f/xgokqwng" method="POST">
             <input type="hidden" name="_subject" value="New message from ireneuszzasadni.com">
             <input type="hidden" name="_next" value="https://www.ireneuszzasadni.com/thanks.html">
-            <input type="hidden" name="_template" value="table">
-            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
             <div class="form-row">
               <label for="email">Email</label>
               <input type="email" id="email" name="email" placeholder="you@company.com" required>
