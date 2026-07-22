@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ireneusz Zasadni — Business Analyst</title>
+<meta name="description" content="Ireneusz Zasadni — IREB-certified Business Analyst and freelance consultant with 10+ years of experience. Discovery workshops, business requirements, project setup, and backlog management for digital projects.">
+<link rel="canonical" href="https://www.ireneuszzasadni.com/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ireneusz Zasadni — Business Analyst">
+<meta property="og:description" content="IREB-certified Business Analyst and freelance consultant. Turning business needs into IT solutions.">
+<meta property="og:url" content="https://www.ireneuszzasadni.com/">
+<meta property="og:image" content="https://www.ireneuszzasadni.com/photo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --bg:#14161b;
+    --bg-alt:#1c1f26;
+    --bg-alt-2:#22262f;
+    --text:#f4f5f7;
+    --text-soft:#9aa0ac;
+    --line:#2b2f39;
+    --accent:#38d996;
+    --accent-soft:rgba(56,217,150,0.12);
+    --accent-2:#f5a623;
+    --accent-2-soft:rgba(245,166,35,0.14);
+    --radius:14px;
+    --maxw:1080px;
+    font-size:17px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:"Iowan Old Style","Georgia",serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+  }
+  h1,h2,h3,h4{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    font-weight:650;
+    letter-spacing:-0.01em;
+    margin:0 0 .5em;
+    color:var(--text);
+  }
+  p{margin:0 0 1em;color:var(--text-soft);}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;position:relative;}
+  img{max-width:100%;display:block;border-radius:var(--radius);}
+  svg{display:block;}
+
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(20,22,27,0.82);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 28px;max-width:var(--maxw);margin:0 auto;
+  }
+  .brand{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    font-weight:700;font-size:1rem;text-decoration:none;color:var(--text);
+    display:flex;align-items:center;gap:10px;
+  }
+  .brand .mark{
+    width:26px;height:26px;border-radius:8px;
+    background:var(--accent);
+    display:flex;align-items:center;justify-content:center;
+    color:#0c1410;font-size:.72rem;font-weight:800;letter-spacing:-0.02em;
+    flex-shrink:0;
+  }
+  .brand-text{display:flex;flex-direction:column;line-height:1.25;}
+  .brand-text small{
+    font-size:.68rem;font-weight:500;color:var(--text-soft);
+    letter-spacing:0;text-transform:none;
+  }
+  .nav-right{display:flex;align-items:center;gap:28px;}
+  nav.links{display:flex;gap:28px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;font-size:.94rem;}
+  nav.links a{text-decoration:none;color:var(--text-soft);transition:color .15s;}
+  nav.links a:hover{color:var(--text);}
+  .nav-cta{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    font-size:.9rem;font-weight:600;text-decoration:none;
+    background:var(--accent-2);color:#241703;padding:9px 18px;border-radius:100px;
+    transition:transform .15s ease, background .15s;
+  }
+  .nav-cta:hover{background:#ffb84d;}
+
+  /* HERO */
+  .hero{padding:96px 0 80px;}
+  .hero-inner{display:grid;grid-template-columns:1.1fr .8fr;gap:56px;align-items:center;}
+  @media (max-width:860px){.hero-inner{grid-template-columns:1fr;}}
+
+  .hero .eyebrow{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;font-weight:700;
+    color:var(--accent);margin-bottom:18px;display:flex;align-items:center;gap:10px;
+  }
+  .hero .eyebrow::before{content:"";width:28px;height:1.5px;background:var(--accent);display:inline-block;}
+  .hero h1{
+    font-size:clamp(2.3rem,5vw,3.6rem);
+    line-height:1.06;
+    max-width:16ch;
+  }
+  .hero .sub{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    font-size:1.2rem;color:var(--text-soft);max-width:48ch;margin:22px 0 6px;
+    font-weight:500;
+  }
+  .hero .subhead{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    font-size:1rem;color:var(--text);max-width:48ch;margin:14px 0 0;
+    font-weight:650;
+  }
+  .hero .lede{max-width:56ch;font-size:1.02rem;margin-top:14px;}
+  .hero-cta-row{display:flex;gap:16px;align-items:center;margin-top:34px;flex-wrap:wrap;}
+  .btn-primary{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    background:var(--accent-2);color:#241703;text-decoration:none;font-weight:700;
+    padding:14px 26px;border-radius:100px;font-size:.98rem;
+    box-shadow:0 10px 24px -10px rgba(245,166,35,.55);
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    display:inline-flex;align-items:center;gap:8px;
+  }
+  .btn-primary:hover{transform:translateY(-2px);background:#ffb84d;box-shadow:0 14px 28px -10px rgba(245,166,35,.6);}
+  .btn-ghost{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    text-decoration:none;font-weight:600;color:var(--text);font-size:.98rem;
+    padding:14px 6px;border-bottom:1.5px solid var(--text-soft);
+    display:inline-flex;align-items:center;gap:6px;
+    transition:border-color .15s ease, color .15s ease;
+  }
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+  .credentials{
+    margin-top:52px;display:flex;gap:36px;flex-wrap:wrap;
+    padding-top:28px;border-top:1px solid var(--line);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+  }
+  .credentials .stat b{display:block;font-size:1.5rem;color:var(--text);font-weight:700;}
+  .credentials .stat span{font-size:.85rem;color:var(--text-soft);}
+
+  .hero-photo{
+    position:relative;
+    aspect-ratio:1/1;
+    border-radius:24px;
+    background:
+      radial-gradient(circle at 50% 38%, rgba(56,217,150,.22), transparent 62%),
+      var(--bg-alt);
+    border:1px solid var(--line);
+    overflow:hidden;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .hero-photo img{
+    width:100%;height:100%;object-fit:cover;object-position:center 12%;border-radius:24px;
+    display:none;
+  }
+  .hero-photo img.has-src{display:block;}
+  .hero-photo img.has-src ~ .placeholder{display:none;}
+  .hero-photo .placeholder{
+    text-align:center;color:var(--text-soft);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    padding:24px;position:relative;z-index:1;
+  }
+  .hero-photo .placeholder .icon{
+    width:56px;height:56px;margin:0 auto 14px;border-radius:50%;
+    background:var(--bg);border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;color:var(--accent);
+  }
+  .hero-photo .placeholder p{font-size:.85rem;margin:0;color:var(--text-soft);}
+  .hero-photo .frame-corner{
+    position:absolute;width:22px;height:22px;border:1.5px solid var(--accent);opacity:.6;z-index:1;
+  }
+  .hero-photo .frame-corner.tl{top:14px;left:14px;border-right:none;border-bottom:none;border-radius:6px 0 0 0;}
+  .hero-photo .frame-corner.br{bottom:14px;right:14px;border-left:none;border-top:none;border-radius:0 0 6px 0;}
+
+  /* SECTION generic */
+  section{padding:76px 0;border-top:1px solid var(--line);}
+  .section-head{max-width:52ch;margin-bottom:44px;}
+  .kicker{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    text-transform:uppercase;letter-spacing:.1em;font-size:.75rem;font-weight:700;
+    color:var(--accent);margin-bottom:12px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .kicker::before{content:"";width:20px;height:1.5px;background:var(--accent);display:inline-block;}
+
+  /* Who I am / Who I work with — two-col */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+  @media (max-width:800px){.split{grid-template-columns:1fr;gap:20px;}}
+
+  /* Cards - What is your case */
+  .card-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  @media (max-width:960px){.card-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.card-grid{grid-template-columns:1fr;}}
+  .case-card{
+    background:var(--bg-alt);border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px 22px;transition:transform .18s ease, box-shadow .18s ease, border-color .18s;
+  }
+  .case-card:hover{transform:translateY(-4px);box-shadow:0 20px 34px -18px rgba(56,217,150,.25);border-color:rgba(56,217,150,.4);}
+  .case-card:hover .icon-badge{background:var(--accent);color:#0c1410;border-color:var(--accent);}
+  .icon-badge{
+    width:44px;height:44px;border-radius:12px;
+    background:var(--accent-soft);color:var(--accent);border:1px solid rgba(56,217,150,.28);
+    display:flex;align-items:center;justify-content:center;margin-bottom:16px;
+    transition:background .18s ease, color .18s ease;
+  }
+  .case-card h4{font-size:1.08rem;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;}
+  .case-card p{font-size:.93rem;margin:0;}
+
+  /* How I work timeline */
+  .steps{position:relative;display:flex;flex-direction:column;gap:0;}
+  .steps::before{
+    content:"";position:absolute;left:23px;top:6px;bottom:6px;width:1px;
+    background:repeating-linear-gradient(to bottom, var(--line) 0 6px, transparent 6px 11px);
+  }
+  .step{
+    display:grid;grid-template-columns:48px 1fr;gap:24px;
+    padding:28px 0;border-bottom:1px solid var(--line);
+    position:relative;
+  }
+  .step:last-child{border-bottom:none;}
+  .step-num{
+    width:48px;height:48px;border-radius:50%;
+    background:var(--bg);border:1.5px solid var(--accent);color:var(--accent);
+    display:flex;align-items:center;justify-content:center;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    font-size:1.05rem;font-weight:700;
+    position:relative;z-index:1;
+  }
+  .step h4{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    font-size:1.12rem;margin-bottom:6px;padding-top:8px;
+  }
+  .step p{font-size:.96rem;margin-bottom:10px;}
+  .artifacts{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    font-size:.82rem;color:var(--accent);background:var(--accent-soft);
+    display:inline-block;padding:8px 14px;border-radius:8px;line-height:1.5;
+  }
+  .artifacts b{font-weight:700;}
+  @media (max-width:600px){
+    .step{grid-template-columns:1fr;gap:6px;}
+    .steps::before{display:none;}
+    .step h4{padding-top:0;}
+  }
+
+  /* Projects CTA band */
+  .projects-band{
+    background:linear-gradient(155deg, var(--bg-alt-2), var(--bg-alt));
+    color:var(--text);border-radius:20px;padding:48px 48px 40px;
+    display:flex;flex-direction:column;gap:36px;
+    position:relative;overflow:hidden;border:1px solid var(--line);
+  }
+  .projects-band::before{
+    content:"";position:absolute;top:-90px;right:-70px;width:260px;height:260px;border-radius:50%;
+    background:radial-gradient(circle, rgba(56,217,150,.28), transparent 70%);
+  }
+  .projects-band::after{
+    content:"";position:absolute;bottom:-110px;left:14%;width:220px;height:220px;border-radius:50%;
+    background:radial-gradient(circle, rgba(245,166,35,.18), transparent 70%);
+  }
+  .projects-band > *{position:relative;z-index:1;}
+  .projects-band-top{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap;}
+  .projects-band h2{color:var(--text);font-size:1.9rem;max-width:14ch;margin-top:0;}
+  .projects-band p{color:var(--text-soft);max-width:34ch;margin-bottom:0;}
+
+  /* For whom */
+  .whom-list{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  @media (max-width:860px){.whom-list{grid-template-columns:1fr;}}
+  .whom-item{
+    background:var(--bg-alt);border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px 24px;transition:transform .18s ease, box-shadow .18s ease, border-color .18s;
+  }
+  .whom-item:hover{transform:translateY(-4px);box-shadow:0 20px 34px -18px rgba(56,217,150,.25);border-color:rgba(56,217,150,.4);}
+  .whom-item .icon{
+    width:44px;height:44px;border-radius:12px;background:var(--accent-soft);color:var(--accent);
+    display:flex;align-items:center;justify-content:center;margin-bottom:16px;
+  }
+  .whom-item h4{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;font-size:1.02rem;}
+  .whom-item p{font-size:.92rem;}
+
+  /* Contact */
+  .contact-panel{
+    background:var(--bg-alt);border:1px solid var(--line);border-radius:20px;padding:56px 48px;text-align:center;
+    position:relative;overflow:hidden;
+  }
+  .contact-panel::before{
+    content:"";position:absolute;top:-120px;left:50%;transform:translateX(-50%);width:320px;height:320px;border-radius:50%;
+    background:radial-gradient(circle, rgba(56,217,150,.18), transparent 70%);
+  }
+  .contact-panel > *{position:relative;z-index:1;}
+  .contact-panel .kicker{justify-content:center;display:flex;}
+  .contact-panel h2{font-size:1.9rem;}
+  .contact-panel .role{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    color:var(--text-soft);font-size:.98rem;margin-bottom:30px;
+  }
+  .contact-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+
+  footer{
+    padding:36px 0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    font-size:.85rem;color:var(--text-soft);
+    border-top:1px solid var(--line);
+  }
+  footer a{text-decoration:none;color:var(--text-soft);}
+  footer a:hover{color:var(--text);}
+
+  /* Client logos strip */
+  .clients-strip{border-top:1px solid rgba(255,255,255,.08);padding-top:28px;}
+  .logo-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;}
+  @media (max-width:860px){.logo-grid{grid-template-columns:repeat(3,1fr);}}
+  @media (max-width:480px){.logo-grid{grid-template-columns:repeat(2,1fr);}}
+  .logo-card{
+    background:#f4f2ee;border-radius:10px;height:66px;
+    display:flex;align-items:center;justify-content:center;padding:8px 10px;
+    box-shadow:0 8px 16px -12px rgba(0,0,0,.5);
+    overflow:hidden;
+  }
+  .logo-card span{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    font-weight:800;font-size:1rem;color:#20242c;letter-spacing:-0.01em;text-align:center;
+    line-height:1.15;
+  }
+  .logo-card small{
+    display:block;font-weight:600;font-size:.62rem;color:#5b6270;letter-spacing:.06em;
+    text-transform:uppercase;margin-top:2px;
+  }
+  .logo-card img{
+    max-width:100%;max-height:100%;width:auto;height:auto;
+    object-fit:contain;border-radius:0;
+  }
+
+  ::selection{background:var(--accent-soft);color:var(--text);}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top"><span class="mark">IZ</span><span class="brand-text">Ireneusz Zasadni<small>Business Analyst · Product Owner</small></span></a>
+    <div class="nav-right">
+      <nav class="links">
+        <a href="#top">Home</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+      <a class="nav-cta" href="contact.html">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="border-top:none;padding-top:88px;">
+    <div class="wrap">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Ireneusz Zasadni · Business Analyst</div>
+          <h1>Turning business needs into IT solutions</h1>
+          <p class="sub">Business analyst (IREB certified) &amp; freelance consultant with over 10 years of experience, combining proven BA methodology with AI-powered tools to accelerate requirements discovery and analysis.</p>
+          <p class="subhead">Helping organizations turn business goals into clear, actionable IT solutions.</p>
+          <p class="lede">I support corporations and software houses in delivering projects and products by clarifying business needs, aligning stakeholders, and ensuring that solutions achieve their intended business goals. My role is to bridge the gap between business and delivery teams, reduce project risk, and help organizations make informed decisions throughout the project lifecycle.</p>
+          <div class="hero-cta-row">
+            <a class="btn-primary" href="#contact">Let's talk</a>
+            <a class="btn-ghost" href="projects.html">Projects
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+          <div class="credentials">
+            <div class="stat"><b>10+ yrs</b><span>consulting experience</span></div>
+            <div class="stat"><b>20+</b><span>projects delivered</span></div>
+            <div class="stat"><b>IREB</b><span>certified analyst</span></div>
+          </div>
+        </div>
+
+        <!-- PHOTO SLOT: using photo.jpg from this folder. Replace the file (keep the same name) to swap the photo. -->
+        <div class="hero-photo">
+          <span class="frame-corner tl"></span>
+          <span class="frame-corner br"></span>
+          <img src="photo.jpg" alt="Ireneusz Zasadni" onload="this.classList.add('has-src')" onerror="this.classList.remove('has-src')">
+          <div class="placeholder">
+            <div class="icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            </div>
+            <p>Add your photo here<br>(edit the <code>src</code> in the &lt;img&gt; tag)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO I AM -->
+  <section id="who">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <div class="kicker">Who I am</div>
+          <h2>A Business Analyst working as a freelance consultant, helping organizations deliver projects with clarity, structure, and a strong focus on business outcomes.</h2>
+        </div>
+        <div>
+          <p>I support digital projects end to end, starting from the earliest pre-sales and sales phases, through discovery, and into full project setup and delivery. I increasingly leverage AI agents to speed up requirements elicitation, workshop synthesis, and documentation — freeing up time for what matters most: stakeholder alignment and critical thinking. My role is to help organizations clarify business goals, shape viable scopes, and translate complex needs into clear, actionable requirements.</p>
+          <p>During discovery phase, I lead workshops, define MVPs, and align stakeholders around a shared product vision and delivery approach.</p>
+          <p>Throughout the entire SDLC, I work closely with business and technical teams to ensure continuity, quality, and predictable outcomes from concept to production.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO I WORK WITH -->
+  <section id="work-with">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <div class="kicker">Who I work with</div>
+          <h2>Across these contexts, I help align diverse stakeholder perspectives around clear goals, realistic scope, and effective delivery models.</h2>
+        </div>
+        <div>
+          <p>I work with a wide range of organizations, from large enterprises and public institutions to scale-ups and technology-driven companies.</p>
+          <p>My clients operate across industries such as industrial manufacturing, healthcare and life sciences, finance, public sector, logistics, and software development.</p>
+          <p>I collaborate closely with senior business stakeholders, product owners, sales teams, domain experts, and delivery teams, supporting initiatives that range from early-stage concept validation to complex, large-scale digital programs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IS YOUR CASE -->
+  <section id="case">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Services</div>
+        <h2>What is your case</h2>
+      </div>
+      <div class="card-grid">
+        <div class="case-card">
+          <div class="icon-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+          <h4>Discovery</h4>
+          <p>I lead fully prepared and professionally moderated discovery workshops that turn fragmented inputs into a shared understanding of goals, scope, assumptions, and delivery risks. AI-assisted transcription and synthesis tools help me capture every insight and turn raw workshop input into structured findings faster.</p>
+        </div>
+        <div class="case-card">
+          <div class="icon-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="18" rx="2"></rect><path d="M9 2h6a1 1 0 0 1 1 1v2H8V3a1 1 0 0 1 1-1z"></path><path d="M9 13l2 2 4-4"></path></svg>
+          </div>
+          <h4>Business requirements</h4>
+          <p>I ensure business needs are translated into clear, testable, and implementation-ready requirements that minimize rework and misunderstandings. AI agents help me accelerate first-draft requirement generation, full consistency checks, and gap analysis, while I carefully validate, refine, and own the final quality.</p>
+        </div>
+        <div class="case-card">
+          <div class="icon-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect></svg>
+          </div>
+          <h4>Project setup</h4>
+          <p>I establish a solid project foundation by defining clear scope boundaries, delivery structure, and ways of working, ensuring project starts with aligned expectations and a realistic delivery plan. AI-supported scenario checks help validate the assumptions and surface potential setup risks earlier in the process.</p>
+        </div>
+        <div class="case-card">
+          <div class="icon-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <h4>Backlog</h4>
+          <p>I build and maintain a well-structured, prioritized backlog that supports efficient delivery, dependency management, and informed decision-making. AI agents help me analyze the backlog for duplicate items, missing acceptance criteria, and dependency risks, flagging up issues that could slow down actual delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW I WORK -->
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Process</div>
+        <h2>How I work</h2>
+        <p>I follow a structured yet pragmatic approach that adapts to the context, maturity, and goals of each project while ensuring clarity, alignment, and predictable delivery.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div>
+            <h4>Context and goals alignment</h4>
+            <p>I start by understanding the business context, strategic objectives, constraints, and success criteria. I use AI tools to quickly synthesize background materials (existing docs, market research) before the first stakeholder conversation.</p>
+            <span class="artifacts"><b>Example artifacts:</b> business goals and success metrics, problem statement, product canvas, business environment, high-level scope outline</span>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div>
+            <h4>Discovery and problem framing</h4>
+            <p>I design, prepare, and moderate discovery workshops to explore user needs, business processes, actors, integrations, risks, and dependencies. AI agents support real-time note synthesis and help surface patterns, gaps, and follow-up questions across multiple workshop sessions.</p>
+            <span class="artifacts"><b>Example artifacts:</b> workshop agenda and materials, user journeys, high-level process flows, user story mapping, assumptions and risks list, initial MVP definition</span>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div>
+            <h4>Scope shaping and project setup</h4>
+            <p>Based on discovery outcomes, I help define scope boundaries, delivery approach, roles, and ways of working.</p>
+            <span class="artifacts"><b>Example artifacts:</b> scope definition, delivery approach overview, roles and responsibilities matrix, project tools and communication channels</span>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div>
+            <h4>Backlog building and prioritization</h4>
+            <p>I build and continuously refine the product backlog, focusing on value, dependencies, and delivery readiness. AI-assisted analysis helps flag inconsistencies, missing acceptance criteria, and prioritization conflicts before they slow down delivery.</p>
+            <span class="artifacts"><b>Example artifacts:</b> prioritized product backlog, user story mapping, dependency mapping, refinement notes and decisions</span>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">05</div>
+          <div>
+            <h4>Business analysis and requirements definition</h4>
+            <p>I translate business and stakeholder needs into clear, structured, and testable requirements using appropriate techniques and artifacts. I combine established BA methods (BPMN, UML, user stories) with AI-powered drafting and validation, significantly reducing turnaround time without compromising precision.</p>
+            <span class="artifacts"><b>Example artifacts:</b> user stories with acceptance criteria, use cases, BPMN or UML diagrams, functional specifications</span>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">06</div>
+          <div>
+            <h4>Continuous collaboration throughout delivery</h4>
+            <p>Throughout the SDLC, I work closely with stakeholders and delivery teams, supporting refinement, clarifications, and decision-making until release.</p>
+            <span class="artifacts"><b>Example artifacts:</b> refinement outputs, sprint goals alignment notes, change impact analysis, decision logs and updated documentation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="projects-band">
+        <div class="projects-band-top">
+          <div>
+            <div class="kicker">Portfolio</div>
+            <h2>Projects</h2>
+            <p>Out of more than 20 projects I have worked on, here are some of the most interesting ones.</p>
+          </div>
+          <a class="btn-primary" href="projects.html">Projects
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <!-- Client logos: non-clickable, illustrative wordmarks of past project clients -->
+        <div class="clients-strip">
+          <div class="logo-grid">
+            <div class="logo-card"><img src="logo-roche.png" alt="Roche"></div>
+            <div class="logo-card"><img src="logo-abb.png" alt="ABB"></div>
+            <div class="logo-card"><img src="logo-nobia.png" alt="Nobia"></div>
+            <div class="logo-card"><img src="logo-gmca.png" alt="Greater Manchester Combined Authority (GMCA)"></div>
+            <div class="logo-card"><img src="logo-droids.png" alt="Droids on Roids"></div>
+            <div class="logo-card"><img src="logo-tax-authority.png" alt="Tax Authority, Sultanate of Oman"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR WHOM -->
+  <section id="whom">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>For whom</h2>
+      </div>
+      <div class="whom-list">
+        <div class="whom-item">
+          <div class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M5 21V7l7-4 7 4v14"></path><path d="M9 21v-6h6v6"></path><path d="M9 9h.01"></path><path d="M15 9h.01"></path><path d="M9 13h.01"></path><path d="M15 13h.01"></path></svg>
+          </div>
+          <h4>Organizations delivering complex digital products</h4>
+          <p>For companies building or modernizing digital solutions that require clear requirements, stakeholder alignment, and structured delivery across multiple teams or systems.</p>
+        </div>
+        <div class="whom-item">
+          <div class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="4.5"></circle><circle cx="12" cy="12" r="1"></circle></svg>
+          </div>
+          <h4>Product and delivery leaders seeking clarity and control</h4>
+          <p>For product owners, heads of delivery, and managers who need support in discovery, scope definition, backlog management, and decision-making to reduce risk and improve predictability.</p>
+        </div>
+        <div class="whom-item">
+          <div class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+          </div>
+          <h4>Sales and pre-sales teams shaping new initiatives</h4>
+          <p>For organizations that need strong analytical support in pre-sales, estimation, and early project framing to turn opportunities into well-defined, viable projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-panel">
+        <h2>Contact</h2>
+        <p class="role">Ireneusz Zasadni - Business Analyst | Product Owner | Consultant &nbsp;IREB certified</p>
+        <div class="contact-links">
+          <a class="btn-primary" href="https://www.linkedin.com/in/ireneusz-zasadni/">Ireneusz Zasadni | LinkedIn
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a class="btn-ghost" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;width:100%;flex-wrap:wrap;gap:12px;">
+    <span>Business Analyst &amp; Freelance Consultant &nbsp;© 2026 Ireneusz Zasadni. All rights reserved.</span>
+    <span><a href="https://www.linkedin.com/in/ireneusz-zasadni/">LinkedIn</a> · <a href="contact.html">Email</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ireneusz Zasadni — Projects</title>
+<meta name="description" content="Selected projects delivered by Ireneusz Zasadni, IREB-certified Business Analyst — for Roche, ABB, Nobia, GMCA, Ministry of Finance of Oman, and more.">
+<link rel="canonical" href="https://www.ireneuszzasadni.com/projects.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ireneusz Zasadni — Projects">
+<meta property="og:description" content="Selected business analysis projects: clinical trials, industrial manufacturing, public sector, tax systems, and pre-sales processes.">
+<meta property="og:url" content="https://www.ireneuszzasadni.com/projects.html">
+<style>
+  :root{
+    --bg:#14161b;
+    --bg-alt:#1c1f26;
+    --bg-alt-2:#22262f;
+    --text:#f4f5f7;
+    --text-soft:#9aa0ac;
+    --line:#2b2f39;
+    --accent:#38d996;
+    --accent-soft:rgba(56,217,150,0.12);
+    --accent-2:#f5a623;
+    --accent-2-soft:rgba(245,166,35,0.14);
+    --radius:14px;
+    --maxw:1080px;
+    font-size:17px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:"Iowan Old Style","Georgia",serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+  }
+  h1,h2,h3,h4{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    font-weight:650;
+    letter-spacing:-0.01em;
+    margin:0 0 .5em;
+    color:var(--text);
+  }
+  p{margin:0 0 1em;color:var(--text-soft);}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;position:relative;}
+  img{max-width:100%;display:block;border-radius:var(--radius);}
+  svg{display:block;}
+
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(20,22,27,0.82);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 28px;max-width:var(--maxw);margin:0 auto;
+  }
+  .brand{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    font-weight:700;font-size:1rem;text-decoration:none;color:var(--text);
+    display:flex;align-items:center;gap:10px;
+  }
+  .brand .mark{
+    width:26px;height:26px;border-radius:8px;
+    background:var(--accent);
+    display:flex;align-items:center;justify-content:center;
+    color:#0c1410;font-size:.72rem;font-weight:800;letter-spacing:-0.02em;
+    flex-shrink:0;
+  }
+  .brand-text{display:flex;flex-direction:column;line-height:1.25;}
+  .brand-text small{
+    font-size:.68rem;font-weight:500;color:var(--text-soft);
+    letter-spacing:0;text-transform:none;
+  }
+  .nav-right{display:flex;align-items:center;gap:28px;}
+  nav.links{display:flex;gap:28px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;font-size:.94rem;}
+  nav.links a{text-decoration:none;color:var(--text-soft);transition:color .15s;}
+  nav.links a:hover{color:var(--text);}
+  nav.links a.active{color:var(--accent);}
+  .nav-cta{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    font-size:.9rem;font-weight:600;text-decoration:none;
+    background:var(--accent-2);color:#241703;padding:9px 18px;border-radius:100px;
+    transition:transform .15s ease, background .15s;
+  }
+  .nav-cta:hover{background:#ffb84d;}
+
+  .btn-primary{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    background:var(--accent-2);color:#241703;text-decoration:none;font-weight:700;
+    padding:14px 26px;border-radius:100px;font-size:.98rem;
+    box-shadow:0 10px 24px -10px rgba(245,166,35,.55);
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    display:inline-flex;align-items:center;gap:8px;
+  }
+  .btn-primary:hover{transform:translateY(-2px);background:#ffb84d;box-shadow:0 14px 28px -10px rgba(245,166,35,.6);}
+  .btn-ghost{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    text-decoration:none;font-weight:600;color:var(--text);font-size:.98rem;
+    padding:14px 6px;border-bottom:1.5px solid var(--text-soft);
+    display:inline-flex;align-items:center;gap:6px;
+    transition:border-color .15s ease, color .15s ease;
+  }
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+
+  /* Page intro */
+  .page-intro{padding:72px 0 56px;}
+  .page-intro .kicker{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    text-transform:uppercase;letter-spacing:.1em;font-size:.75rem;font-weight:700;
+    color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:10px;
+  }
+  .page-intro .kicker::before{content:"";width:20px;height:1.5px;background:var(--accent);display:inline-block;}
+  .page-intro h1{font-size:clamp(2rem,4.4vw,3rem);max-width:16ch;}
+  .page-intro p{font-size:1.05rem;max-width:56ch;}
+
+  section{padding:0 0 76px;}
+  .kicker{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    text-transform:uppercase;letter-spacing:.1em;font-size:.75rem;font-weight:700;
+    color:var(--accent);margin-bottom:12px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .kicker::before{content:"";width:20px;height:1.5px;background:var(--accent);display:inline-block;}
+
+  /* Project case */
+  .projects-list{display:flex;flex-direction:column;gap:28px;}
+  .project-case{
+    background:var(--bg-alt);border:1px solid var(--line);border-radius:20px;
+    padding:40px 40px 44px;
+  }
+  @media (max-width:640px){.project-case{padding:28px 22px 32px;}}
+  .project-client{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;font-weight:700;
+    color:var(--accent);margin-bottom:10px;
+  }
+  .project-title{font-size:1.5rem;margin-bottom:22px;max-width:none;}
+  @media (max-width:560px){.project-title{font-size:1.25rem;}}
+  .project-stats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px;}
+  .stat-chip{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    background:var(--accent-2-soft);color:var(--accent-2);
+    font-size:.82rem;font-weight:700;padding:8px 14px;border-radius:100px;
+  }
+  .project-fields{display:flex;flex-direction:column;gap:20px;}
+  .field-label{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:700;
+    color:var(--text-soft);margin-bottom:6px;
+  }
+  .project-fields p{font-size:.98rem;margin:0;}
+
+  .testimonial{
+    margin-top:28px;padding:26px 28px;border-left:3px solid var(--accent);
+    background:var(--accent-soft);border-radius:0 12px 12px 0;
+  }
+  .testimonial p{
+    font-style:italic;color:var(--text);font-size:1rem;margin:0 0 14px;
+  }
+  .testimonial cite{
+    font-style:normal;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    font-size:.85rem;color:var(--accent);font-weight:700;display:block;
+  }
+  .testimonial cite span{
+    display:block;font-weight:500;color:var(--text-soft);font-size:.82rem;margin-top:2px;
+  }
+
+  /* Contact-style closing CTA (reuses projects-band look) */
+  .close-cta{
+    background:linear-gradient(155deg, var(--bg-alt-2), var(--bg-alt));
+    border:1px solid var(--line);border-radius:20px;padding:48px;text-align:center;
+    position:relative;overflow:hidden;
+  }
+  .close-cta::before{
+    content:"";position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:300px;height:300px;border-radius:50%;
+    background:radial-gradient(circle, rgba(56,217,150,.2), transparent 70%);
+  }
+  .close-cta > *{position:relative;z-index:1;}
+  .close-cta h2{font-size:1.7rem;}
+  .close-cta p{max-width:44ch;margin-left:auto;margin-right:auto;}
+
+  footer{
+    padding:36px 0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    font-size:.85rem;color:var(--text-soft);
+    border-top:1px solid var(--line);
+  }
+  footer a{text-decoration:none;color:var(--text-soft);}
+  footer a:hover{color:var(--text);}
+
+  ::selection{background:var(--accent-soft);color:var(--text);}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="mark">IZ</span><span class="brand-text">Ireneusz Zasadni<small>Business Analyst · Product Owner</small></span></a>
+    <div class="nav-right">
+      <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+      </nav>
+      <a class="nav-cta" href="contact.html">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- PAGE INTRO -->
+  <div class="wrap">
+    <div class="page-intro">
+      <h1>Projects</h1>
+      <p>Out of more than 20 projects I have worked on, here are some of the most interesting ones.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="projects-list">
+
+        <!-- CRIDO -->
+        <div class="project-case">
+          <div class="project-client">Client: Crido</div>
+          <h2 class="project-title">Project: Funding search platform with scoring and LLM capabilities</h2>
+          <div class="project-stats">
+            <span class="stat-chip">Project team size: 10</span>
+            <span class="stat-chip">Project length: 6 months</span>
+            <span class="stat-chip">Satisfied Product Owners: 1</span>
+          </div>
+          <div class="project-fields">
+            <div>
+              <div class="field-label">Problem</div>
+              <p>Crido needed an internal tool to efficiently identify and match public funding opportunities to client profiles. The existing process was manual, time-consuming, and lacked scalability when working across multiple funding sources.</p>
+            </div>
+            <div>
+              <div class="field-label">Industry</div>
+              <p>Consulting and advisory services.</p>
+            </div>
+            <div>
+              <div class="field-label">Challenges</div>
+              <p>My focus was on quickly reconstructing and structuring requirements based on fragmented discovery materials. Within two weeks, I created a complete and development-ready backlog for phase one, enabling the team to start implementation without further delays. In the next phase, I supported the full product lifecycle by leading discovery workshops, defining scope (WSB), building and refining the backlog, and collaborating with the Product Owner on detailed requirements and acceptance criteria.</p>
+            </div>
+            <div>
+              <div class="field-label">Business analyst role</div>
+              <p>My focus was on quickly reconstructing and structuring requirements based on fragmented discovery materials. Within two weeks, I created a complete and development-ready backlog for phase one, enabling the team to start implementation without further delays. In the next phase, I supported the full product lifecycle by leading discovery workshops, defining scope (WSB), building and refining the backlog, and collaborating with the Product Owner on detailed requirements and acceptance criteria.</p>
+            </div>
+            <div>
+              <div class="field-label">Delivered outcomes</div>
+              <p>The project successfully moved from a blocked state to active development within a short timeframe. My contribution enabled a fast recovery of delivery, clear scope definition for phase one, and structured continuation into phase two. The result was a scalable platform concept combining data aggregation, scoring, and LLM capabilities to support consultants in efficiently identifying tailored funding opportunities.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROCHE -->
+        <div class="project-case">
+          <div class="project-client">Client: Roche</div>
+          <h2 class="project-title">Project: Mobile Application for SMA Clinical Trial</h2>
+          <div class="project-stats">
+            <span class="stat-chip">Team size: 15</span>
+            <span class="stat-chip">Trial size: 100-150 patients</span>
+            <span class="stat-chip">Project length: 8 months</span>
+          </div>
+          <div class="project-fields">
+            <div>
+              <div class="field-label">Problem</div>
+              <p>Roche needed a patient-friendly Android mobile application to support SMA clinical trials by enabling reliable, real-world data collection directly from patients, beyond traditional clinical settings.</p>
+            </div>
+            <div>
+              <div class="field-label">Industry</div>
+              <p>Pharmaceuticals and Life Sciences.</p>
+            </div>
+            <div>
+              <div class="field-label">Challenges</div>
+              <p>The project was delivered in a highly regulated medical environment, requiring deep understanding of clinical terminology, data quality, and compliance standards. A key challenge was translating complex scientific and clinical needs into a scalable digital product while coordinating multiple stakeholders across science, data, and delivery teams.</p>
+            </div>
+            <div>
+              <div class="field-label">Business analyst role</div>
+              <p>I acted as the bridge between scientific experts and the delivery team, ensuring clear communication and shared understanding. I owned the end-to-end requirements process, managed and prioritized the product backlog, supported Scrum ceremonies, and delivered functional documentation. My focus was on aligning business, scientific, and technical perspectives to enable efficient and predictable delivery.</p>
+            </div>
+            <div>
+              <div class="field-label">Delivered outcomes</div>
+              <p>Within eight months, the team delivered a production-ready mobile application for SMA clinical trials. The solution enabled structured and compliant collection of patient behavioral data, supporting Roche's clinical research goals and improving access to high-quality real-world insights.</p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p>"In the specialized and high-stakes field of digital biomarkers, precision and reliability are paramount. Ireneusz performed very well in this environment. He led the requirements gathering for our application, a complex project that required a solid understanding of both technical constraints and user needs."</p>
+            <cite>Justyna<span>Roche Mobile Team Lead - Digital Biomarkers</span></cite>
+          </div>
+        </div>
+
+        <!-- ABB MOTION -->
+        <div class="project-case">
+          <div class="project-client">Client: ABB - Motion</div>
+          <h2 class="project-title">Project: Motion Installed Base Program (ABB Motion Services)</h2>
+          <div class="project-stats">
+            <span class="stat-chip">Number of integrations: 10+ systems</span>
+            <span class="stat-chip">Number of end users: over 1000</span>
+            <span class="stat-chip">Project length: over 4 years</span>
+          </div>
+          <div class="project-fields">
+            <div>
+              <div class="field-label">Problem</div>
+              <p>ABB Motion Services needed a unified and scalable way to manage product data related to motors and drives. Existing solutions relied on multiple applications tightly coupled with data sources, leading to inefficiencies, duplicated functionality, and frequent context switching for business users.</p>
+            </div>
+            <div>
+              <div class="field-label">Industry</div>
+              <p>Industrial Manufacturing</p>
+            </div>
+            <div>
+              <div class="field-label">Challenges</div>
+              <p>The project involved a large and diverse group of stakeholders representing multiple business applications, often with unclear or misaligned strategic goals. Additional challenges included low Scrum maturity on the business side and the need to transition toward more agile ways of working. From a technical perspective, ensuring data consistency across systems and defining clear ownership of requirements in a distributed landscape were critical complexities.</p>
+            </div>
+            <div>
+              <div class="field-label">Business analyst role</div>
+              <p>My focus was on establishing an effective requirements elicitation and documentation process across multiple stakeholder groups. I introduced best practices for defining and communicating requirements to development teams, ensuring clarity and consistency of business needs, and improving backlog quality mostly on acceptance criteria level. I also supported the Delivery Manager in the Agile transformation, contributed to cross-system mappings, and helped align business expectations with a REST API–based architecture.</p>
+            </div>
+            <div>
+              <div class="field-label">Delivered outcomes</div>
+              <p>My contribution resulted in a clear and repeatable requirements process, faster delivery of new functionalities, significantly improved communication between business and delivery teams, and a measurable increase in the overall quality of project documentation.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ABB ELECTRIFICATION -->
+        <div class="project-case">
+          <div class="project-client">Client: ABB - Electrification</div>
+          <h2 class="project-title">Project: Smissline TP Web app configurator</h2>
+          <div class="project-stats">
+            <span class="stat-chip">Number of end-users: 30-50 new users every month</span>
+            <span class="stat-chip">Number of items (products) used in app: over 3000</span>
+            <span class="stat-chip">Project length: over 1 year</span>
+          </div>
+          <div class="project-fields">
+            <div>
+              <div class="field-label">Problem</div>
+              <p>ABB Electrification needed to modernize the existing Smissline Configurator by migrating it from a desktop application to a web-based solution. The goal was to make the configurator accessible to customers online, while preserving the full Smissline product portfolio and enabling modern user experience features such as improved user flows, configuration saving, and export capabilities.</p>
+            </div>
+            <div>
+              <div class="field-label">Industry</div>
+              <p>Industrial Manufacturing</p>
+            </div>
+            <div>
+              <div class="field-label">Challenges</div>
+              <p>The project involved a very large and complex functional scope, including numerous product dependencies and strict validation rules to ensure correct configurations. The legacy system lacked sufficient documentation, and SME availability was limited. The delivery team was distributed across three continents, while decision-makers did not share a consistent product vision. Additionally, the project operated with low Scrum maturity, making planning, predictability, and iterative delivery difficult.</p>
+            </div>
+            <div>
+              <div class="field-label">Business analyst role</div>
+              <p>My focus was on stabilizing and structuring the delivery process. I cleaned up and reorganized the backlog, introduced quality standards for user stories, and aligned designers, developers, and QA around a shared way of working. I improved communication between the Product Owner, Subject Matter Experts, and the delivery team, and established clear processes for requirement acceptance and validation, including end-user testing.</p>
+            </div>
+            <div>
+              <div class="field-label">Delivered outcomes</div>
+              <p>Over the course of one year, the team achieved predictable and transparent delivery, with clear visibility into what features would be delivered and when. Communication between business and delivery teams improved significantly, and a structured UAT process was introduced, enabling the business to effectively validate configurations. These improvements laid the foundation for a scalable, web-based Smissline Configurator aligned with both business expectations and delivery capabilities.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- OMAN TAX -->
+        <div class="project-case">
+          <div class="project-client">Client: Ministry of Finance, Sultanate of Oman</div>
+          <h2 class="project-title">Project: Tax System Extension (VAT &amp; Excise)</h2>
+          <div class="project-stats">
+            <span class="stat-chip">Project team size: 20</span>
+            <span class="stat-chip">Number of user stories created: over 100</span>
+            <span class="stat-chip">Project length: 12 months</span>
+          </div>
+          <div class="project-fields">
+            <div>
+              <div class="field-label">Problem</div>
+              <p>The Ministry of Finance of the Sultanate of Oman needed to extend an existing corporate tax system with new VAT and excise tax modules to support national tax reforms and ensure compliance with upcoming tax regulations.</p>
+            </div>
+            <div>
+              <div class="field-label">Industry</div>
+              <p>Public Sector and Government Finance.</p>
+            </div>
+            <div>
+              <div class="field-label">Challenges</div>
+              <p>The project was delivered in a highly regulated, legislation-driven environment, requiring strict adherence to tax laws and predefined documentation standards. A major challenge was managing a large and complex backlog of over 100 user stories, with strong dependencies between functionalities that required careful sequencing and prioritization. Additional challenges included a broad stakeholder landscape, cultural differences, and the need to translate complex legal requirements into clear, implementable system specifications.</p>
+            </div>
+            <div>
+              <div class="field-label">Business analyst role</div>
+              <p>My focus was on intensive analysis of legal and project documentation and translating it into clear, actionable requirements understandable for development and testing teams. In addition, I worked closely with the Product Owner on ongoing backlog management, priority definition, and continuous communication of risks and mitigation strategies. This collaboration ensured transparency, reduced delivery risk, and supported effective implementation of complex VAT and excise tax processes.</p>
+            </div>
+            <div>
+              <div class="field-label">Delivered outcomes</div>
+              <p>My contribution enabled effective communication between legal, business, and technical teams, reduced ambiguity in requirements, and supported the successful implementation of a complex, regulation-driven system. The project delivered extended VAT and excise functionalities integrated into the existing tax system, including a dedicated taxpayer portal with registration, approval workflows, and tax declaration assessment capabilities.</p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p>"Not many people can handle time pressure and demanding client as Irek can. We've worked together on a Oman Tax project for more than a year, and he was always very patient, solution-oriented and there was nothing he couldn't solve it. Not less important is to say that Irek was always very committed and focused on delivering on time. From a personal side, he was also very kind and easy to deal with, which made our relationship smooth even in a very intensive and stressful situations. I highly recommend Irek as a BA and would love to work together again."</p>
+            <cite>Marko<span>Nortal Project Manager – Oman Tax System Extension (VAT &amp; Excise)</span></cite>
+          </div>
+        </div>
+
+        <!-- DROIDS ON ROIDS -->
+        <div class="project-case">
+          <div class="project-client">Client: Droids on Roids</div>
+          <h2 class="project-title">Project: Establishing a new pre-sales process focused on high-quality business requirements and scope definition</h2>
+          <div class="project-stats">
+            <span class="stat-chip">Number of project estimates prepared for sales team: 25</span>
+            <span class="stat-chip">Number of discovery workshops moderated: 10</span>
+            <span class="stat-chip">Number of satisfied Droids on Roids CEO's: 1</span>
+          </div>
+          <div class="project-fields">
+            <div>
+              <div class="field-label">Problem</div>
+              <p>Droids On Roids faced an inefficient and inconsistent project estimation process for external clients. The sales team owned the entire process, heavily involving technical roles, which led to organizational chaos, low estimation quality, and limited scalability. Company leadership identified the need for a structured, repeatable, and higher-quality approach to project valuation.</p>
+            </div>
+            <div>
+              <div class="field-label">Industry</div>
+              <p>Software Development and IT Services.</p>
+            </div>
+            <div>
+              <div class="field-label">Challenges</div>
+              <p>The existing process lacked clear ownership, defined roles, and standardized artifacts. Estimations were time-consuming, inconsistent, and difficult to scale. A key challenge was designing a process that balanced sales efficiency with technical accuracy, while fitting the company's real resource and competency model.</p>
+            </div>
+            <div>
+              <div class="field-label">Business analyst role</div>
+              <p>My focus was on redesigning the project estimation process end to end, defining clear stages, responsibilities, and decision points for each role involved. I worked closely with sales and technical teams to align business and delivery perspectives. I also created practical templates and tools, including estimation spreadsheets, budget planning models, and workload calculations based on team composition. In parallel, I actively supported sales activities by contributing to client estimations, participating in client meetings, and designing and moderating discovery workshops.</p>
+            </div>
+            <div>
+              <div class="field-label">Delivered outcomes</div>
+              <p>Within three months, a new, structured estimation process was defined and adopted, tailored to the company's capabilities and delivery model. The outcome included improved estimation quality, better collaboration between sales and technical teams, reduced organizational friction, and a more professional and predictable pre-sales process for external clients.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- NOBIA -->
+        <div class="project-case">
+          <div class="project-client">Client: Nobia</div>
+          <h2 class="project-title">Project: Low-Code order tracking &amp; fulfillment proof of concept (Mendix)</h2>
+          <div class="project-stats">
+            <span class="stat-chip">Discovery duration: 6 weeks</span>
+            <span class="stat-chip">Development time and "ready to use" solution: 4 months</span>
+          </div>
+          <div class="project-fields">
+            <div>
+              <div class="field-label">Problem</div>
+              <p>A European industrial group specializing in the design, production, and sale of kitchens and storage solutions needed an internal system to monitor customer orders and track order fulfillment processes. This included installation at customer sites and post-sales service. Due to aggressive timelines, the client wanted to validate whether a low-code platform (Mendix) could meet their functional and integration requirements.</p>
+            </div>
+            <div>
+              <div class="field-label">Industry</div>
+              <p>Manufacturing and Retail, covering B2C.</p>
+            </div>
+            <div>
+              <div class="field-label">Challenges</div>
+              <p>The project required fast validation of a new technology while operating under tight delivery timelines. Key challenges included a complex discovery phase with multiple stakeholder groups holding conflicting expectations, partial readiness on the client side for required integrations, and technical dependencies related to selected Salesforce modules. Balancing speed, scope clarity, and technical feasibility was critical to the success of the proof of concept.</p>
+            </div>
+            <div>
+              <div class="field-label">Business analyst role</div>
+              <p>My focus was on leading the discovery phase from day one by designing, organizing, and moderating workshops. I introduced and applied practical discovery tools such as use cases, user story mapping, and user flows to define a clear and achievable scope. I worked closely with stakeholders and the delivery team to align expectations, identify risks early, and support informed decision-making around the low-code approach.</p>
+            </div>
+            <div>
+              <div class="field-label">Delivered outcomes</div>
+              <p>Thanks to my active involvement throughout the project, the proof of concept was delivered with clear scope, strong stakeholder alignment, and minimized delivery risk. My work enabled early identification and mitigation of key business and technical risks, streamlined communication between stakeholders and the delivery team, and ensured fast decision-making. Lean, purpose-driven documentation and a well-structured discovery process significantly accelerated development, resulting in a working Mendix-based solution ready for client validation and next-step decisions.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- GMCA -->
+        <div class="project-case">
+          <div class="project-client">Client: Greater Manchester Combined Authority (GMCA)</div>
+          <h2 class="project-title">Project: Digital self-assessment platform for early years workforce</h2>
+          <div class="project-stats">
+            <span class="stat-chip">WCAG 2.1 AA compliance: 100% of user-facing screens</span>
+            <span class="stat-chip">Project length: 5 months</span>
+          </div>
+          <div class="project-fields">
+            <div>
+              <div class="field-label">Problem</div>
+              <p>A public sector client needed a digital tool to support self-assessment, professional development, and integrated working across a multi-agency early years workforce. The existing competency framework was paper-based and lacked scalability, data consistency, and accessibility, limiting its effectiveness as a development and training tool.</p>
+            </div>
+            <div>
+              <div class="field-label">Industry</div>
+              <p>Public sector</p>
+            </div>
+            <div>
+              <div class="field-label">Challenges</div>
+              <p>The client had no prior experience in digital product delivery or Agile methodologies, requiring significant enablement and guidance throughout the project. Establishing a shared understanding of delivery processes, terminology, and collaboration models was essential. Additionally, as a public sector solution, the system had to fully comply with WCAG 2.1 AA accessibility standards, introducing complexity in UI design and usability for users with visual and other impairments.</p>
+            </div>
+            <div>
+              <div class="field-label">Business analyst role</div>
+              <p>My focus was on guiding the client end to end through the digital delivery process, from discovery to production release, using Scrum. I worked closely with stakeholders to clarify expectations, translate business needs into feasible requirements within low-code constraints, and continuously align scope with technical possibilities. A key part of my contribution was building trust with the client, establishing clear communication channels, and enabling informed decision-making throughout the project lifecycle.</p>
+            </div>
+            <div>
+              <div class="field-label">Delivered outcomes</div>
+              <p>Within five months, a fully functional, WCAG-compliant digital self-assessment platform was delivered using Mendix. My involvement enabled the client to confidently navigate Agile delivery, understand trade-offs, and actively participate in product development. The result was a complete, accessible solution supporting competency assessment across multiple professional levels, delivered on time, in full scope, and with strong stakeholder buy-in.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- XL CATLIN -->
+        <div class="project-case">
+          <div class="project-client">Client: XL Catlin (currently AXA)</div>
+          <h2 class="project-title">Project: Internal RDBMS refactoring for corporate insurance reporting</h2>
+          <div class="project-stats">
+            <span class="stat-chip">On-site project length: 6 months</span>
+          </div>
+          <div class="project-fields">
+            <div>
+              <div class="field-label">Problem</div>
+              <p>The Toronto office of XL Catlin relied on a legacy, custom-built system for generating reports and client documents for corporate insurance customers. Over time, the underlying relational database—built on Claris FileMaker—had become complex, slow, and difficult to maintain, negatively impacting performance, data security, usability, and future scalability.</p>
+            </div>
+            <div>
+              <div class="field-label">Industry</div>
+              <p>Insurance</p>
+            </div>
+            <div>
+              <div class="field-label">Challenges</div>
+              <p>The project required deep understanding of complex insurance data, including insured entities, risks, and policy-related information. Additional challenges included limited documentation, a database structure that had evolved organically over several years without clear architectural direction, and the use of a niche technology (FileMaker). These factors resulted in growing technical debt and increasing dissatisfaction among end users.</p>
+            </div>
+            <div>
+              <div class="field-label">Business analyst role</div>
+              <p>My focus was on understanding the system from a business perspective by working closely with end users to identify pain points and define requirements for the refactored solution. I translated business needs into a clearer and more sustainable data model. In addition, I actively contributed to the technical refactoring of the system, including database relationship design, data mapping, view creation, and UI improvements, ensuring that the new structure better reflected real business processes.</p>
+            </div>
+            <div>
+              <div class="field-label">Delivered outcomes</div>
+              <p>The refactored solution delivered a more performant, secure, and maintainable database structure, with improved usability for business users. My involvement significantly improved communication between the delivery side and system users, enabled a clearer understanding of business needs, and ensured those needs were more accurately reflected in the system's functionality, laying a solid foundation for future development and system growth.</p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p>"I had the pleasure of working closely with Ireneusz, who was an integral part of the Business Analysis team that I managed at XL Catlin. Ireneusz came across as a determined and committed problem solver, an in-depth analytical thinker, and was a superior resource to our team. His ability to troubleshoot, analyze, and suggest solutions to pending problems was outstanding. He also engaged very effectively with internal stakeholders and communicated and relayed complex concepts to members of various teams. I can also speak highly of his willingness to learn and take on new challenges, which fit perfectly in our fast-paced environment."</p>
+            <cite>Martin<span>Business Analyst Team Manager at XL Catlin Toronto</span></cite>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="close-cta">
+        <h2>Have a similar case?</h2>
+        <p>If your organization needs help clarifying business goals, structuring requirements, or setting up a project for predictable delivery, let's talk about it.</p>
+        <a class="btn-primary" href="contact.html">Let's talk
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;width:100%;flex-wrap:wrap;gap:12px;">
+    <span>Business Analyst &amp; Freelance Consultant &nbsp;© 2026 Ireneusz Zasadni. All rights reserved.</span>
+    <span><a href="https://www.linkedin.com/in/ireneusz-zasadni/">LinkedIn</a> · <a href="contact.html">Email</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
