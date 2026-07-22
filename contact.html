@@ -174,6 +174,25 @@
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
     font-size:.78rem;color:var(--text-soft);margin-top:14px;margin-bottom:0;
   }
+  .contact-form-card button[type="submit"]{border:none;cursor:pointer;}
+  .contact-form-card button[disabled]{opacity:.6;cursor:default;}
+
+  /* Inline success / error states */
+  .form-success{text-align:center;padding:14px 0 6px;}
+  .form-success .icon{
+    width:56px;height:56px;margin:0 auto 18px;border-radius:50%;
+    background:var(--accent-soft);color:var(--accent);border:1.5px solid var(--accent);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .form-success h3{font-size:1.25rem;margin-bottom:8px;}
+  .form-success p{font-size:.95rem;margin:0;color:var(--text-soft);}
+  .form-error{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+    font-size:.85rem;color:#ffb4a8;
+    background:rgba(245,90,70,.10);border:1px solid rgba(245,90,70,.32);
+    border-radius:10px;padding:11px 14px;margin-top:16px;
+  }
+  .form-error a{color:inherit;text-decoration:underline;text-underline-offset:3px;}
 
   footer{
     padding:36px 0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
@@ -229,29 +248,39 @@
           </div>
         </div>
 
-        <!-- CONTACT FORM — powered by Formspree (https://formspree.io/f/xgokqwng) -->
+        <!-- CONTACT FORM — powered by Formspree (https://formspree.io/f/xgokqwng), submitted via AJAX so the visitor stays on the page -->
         <div class="contact-form-card">
-          <h3>Send a message</h3>
-          <p class="form-sub">Fill in the form and I'll get back to you as soon as possible.</p>
-          <form action="https://formspree.io/f/xgokqwng" method="POST">
-            <input type="hidden" name="_subject" value="New message from ireneuszzasadni.com">
-            <input type="hidden" name="_next" value="https://www.ireneuszzasadni.com/thanks.html">
-            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-            <div class="form-row">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="you@company.com" required>
+          <div id="form-live">
+            <h3>Send a message</h3>
+            <p class="form-sub">Fill in the form and I'll get back to you as soon as possible.</p>
+            <form id="contact-form" action="https://formspree.io/f/xgokqwng" method="POST">
+              <input type="hidden" name="_subject" value="New message from ireneuszzasadni.com">
+              <input type="hidden" name="_next" value="https://www.ireneuszzasadni.com/thanks.html">
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@company.com" required>
+              </div>
+              <div class="form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about your project..." required></textarea>
+              </div>
+              <div class="form-actions">
+                <button class="btn-primary" type="submit">Send message
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+              <p class="form-error" id="form-error" role="alert" hidden>Something went wrong sending your message. Please try again, or email me directly via <a href="https://www.linkedin.com/in/ireneusz-zasadni/">LinkedIn</a>.</p>
+              <p class="form-note">Your message goes straight to my inbox. I usually reply within one business day.</p>
+            </form>
+          </div>
+          <div id="form-success" class="form-success" role="status" hidden>
+            <div class="icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </div>
-            <div class="form-row">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about your project..." required></textarea>
-            </div>
-            <div class="form-actions">
-              <button class="btn-primary" type="submit">Send message
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-              </button>
-            </div>
-            <p class="form-note">Your message goes straight to my inbox. I usually reply within one business day.</p>
-          </form>
+            <h3>Message sent</h3>
+            <p>Thank you for reaching out. I'll get back to you as soon as possible — usually within one business day.</p>
+          </div>
         </div>
 
       </div>
@@ -266,6 +295,40 @@
     <span><a href="https://www.linkedin.com/in/ireneusz-zasadni/">LinkedIn</a> · <a href="contact.html">Email</a></span>
   </div>
 </footer>
+
+<script>
+  (function () {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+    var errorBox = document.getElementById('form-error');
+    var button = form.querySelector('button[type="submit"]');
+    var buttonHtml = button ? button.innerHTML : '';
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (errorBox) errorBox.hidden = true;
+      if (button) { button.disabled = true; button.textContent = 'Sending…'; }
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (response) {
+        if (response.ok) {
+          document.getElementById('form-live').hidden = true;
+          document.getElementById('form-success').hidden = false;
+        } else {
+          showError();
+        }
+      }).catch(showError);
+
+      function showError() {
+        if (errorBox) errorBox.hidden = false;
+        if (button) { button.disabled = false; button.innerHTML = buttonHtml; }
+      }
+    });
+  })();
+</script>
 
 </body>
 </html>
